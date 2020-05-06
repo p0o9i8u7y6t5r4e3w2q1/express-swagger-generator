@@ -16,6 +16,7 @@ router.get('/', function(req, res, next) {
  * This route will respond greetings to name in json request body.
  * @route POST /hello/
  * @group hello - Test Demo
+ * @param {enum[]} nothing.query.required - username or email -eg: a,b,c,d,e
  * @param {ReqNameJSON.model} name.body.required - username or email
  * @returns {object} 200 - An object with the key 'msg'
  * @returns {Error}  default - Unexpected error
