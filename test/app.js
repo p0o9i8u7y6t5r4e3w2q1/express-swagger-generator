@@ -2,7 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const swaggerUi = require("swagger-ui-express");
-const swaggerGenerator = require("../lib/swagger").generateSpecAndMount;
+const swaggerGenerator = require("../index");
 
 async function startup() {
   // App init
